@@ -109,7 +109,7 @@ public class DBUtils {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx-video", "root", "Uixt2952");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javafx-video", "root", "toor"); //edit password
             preparedStatement = connection.prepareStatement("SELECT password, favChannel FROM users WHERE username = ?");
             preparedStatement.setString(1, username);
             resultSet = preparedStatement.executeQuery();
